@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+.wrap{
+	margin: 0 auto;
+    
+}
+.header{border-bottom: 1px solid black;}
+.link1{
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+}
+.link1 a{
+	padding: 15px;
+    text-decoration: none;
+    color: black; 
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 30px;
+}
+.banner1{
+    display: flex;
+	height: 834px;
+}
+.banner1-left{
+  /* width: 50%; */
+  flex:1;
+}
+.banner1-left img{
+	width: 100%;
+}
+
+.banner1-left{
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section.png?raw=true);
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+}
+
+
+.banner1-right{
+  /* width: 50%; */
+  flex:1;
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section2.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 100px;
+}
+.banner1-right p,h1{
+	color:blue;
+	line-height: 1.5
+}
+.banner1-right h1{font-size: 50px;}
+@media(max-width:768px){
+  .banner1{
+    display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+    align-items: center;}
+   .banner1-left{width:48%;}
+   .banner1-left img{width: 100%;}
+   .banner1-right{width: 48%; padding: 20px}
+  }
+@media(max-width:375px){
+    .banner1{
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+    padding-left: 10px;}
+   .banner1-left{width:100%;}
+   .banner1-left img{width: 100%;}
+   .banner1-right{width: 100%; padding: 20px}
+  }
+.picture{
+	display: flex;
+    margin: 0 auto;
+}
+.picture1 {width: 50%;}
+.picture1 img{width: 100%;margin-bottom: 30px;}
+.picture1-content{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 24px;
+    line-height: 1.5;
+	padding-right: 50px;
+}
+.new{
+	color: white;
+	background-color:blue;
+	padding:10px;
+	border-radius: 40px;
+	border: 1px solid black;
+	text-decoration: none;
+	font-size: 16px;
+}
+.new:hover{background-color: green;color:#fff}
+.intro h2{
+	margin-top: 25px;
+	font-size: 28px;
+	font-weight: 700;
+}
+.intro h3{font-size: 24px;color:blue;}
+.passage{max-width:636px}
+.passage p{margin-bottom: 25px;}
+.passage a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding:10px;
+	border-radius: 40px;
+}
+.passage a:hover{background-color: purple;color:white;}
+@media(max-width:768px){
+  .picture{
+    display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+    align-items: center;}
+   .picture1 img{width: 100%;}
+   .picture1-content{width: 100%; padding: 20px}
+  }
+@media(max-width:375px){
+  .picture{
+    display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	padding-left: 10px;
+    }
+	.picture1 {
+    width: 100%;}
+   .picture1 img{width: 100%;}
+   .picture1-content{width: 100%; padding: 20px}
+  }
+.content{
+	max-width: 1296px;
+	margin: 30px auto;
+}
+.blog-list{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	gap:24px
+}
+.bar{display: flex;
+	border: 1px solid black;
+	max-width: 416px;
+	border-radius: 40px;
+}
+.bar input{border: none;}
+.search-icon{
+	padding: 10px;
+    margin-left: 15px;
+}
+.search{
+	padding: 15px 40px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.card {
+	line-height: 1.5;
+	max-width: 416px;
+}
+.card img{width:100%}
+.card time{display: block;}
+.card a{text-decoration: none;}
+.hashtag{
+	margin-right: 10px;
+	font-size: 20px;
+	color: blue;
+}
+.card h2{
+	font-size: 30px;
+	padding: 10px;
+	font-weight: bold;
+}
+.card p{
+	color:gray;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.button{
+	padding: 10px;
+	border: 1px solid;
+	color: black;
+	border-radius: 10px;
+}
+.button:hover{
+	background-color: green
+	;color:white
+}
+.button:active{
+	background-color:red
+	;color: white;
+}
+@media(max-width:768px){
+  .blog-list{
+    display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-around;
+    }
+  .card{
+	width: 47%; 
+	padding:10px 10px 10px 10px
+  }
+  .card img{width: 100%;}
+  .card h2 p{width: 100%;}
+  .hashtag{width:100%}
+}
+@media(max-width:375px){
+  .blog-list{
+    display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+    }
+	.card{width: 100%; padding:15px 20px 15px 20px
+  }
+    .card img{width: 100%;}
+  }
+.page{
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	max-width: 328px;
+	margin: 0 auto;	
+}
+.page a{
+	padding: 20px; 
+	text-decoration: none;color:black;
+	font-family: sans-serif;
+}
+.page a:hover{color:blue}
+.page a:active{color: green;}
+@media(max-width:375px){
+.page{
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	max-width: 328px;
+	margin: 0 auto;	
+  }
+}  
+.final{
+	display: flex;
+	justify-content:space-around;
+	padding:80px 0;
+	margin: 0 auto;
+	border-top: 1px solid black;
+	max-width: 1296px;
+}
+.email{
+	font-size: 30px;
+	margin-left: 40px;
+}
+.link-icon{
+	display: flex;
+	margin-left: 40px;
+	gap:5px;
+}
+.copy-right{
+	text-align: center;
+	padding: 10px;
+	font-size: 16px
+}
+@media(max-width:768px){
+	.final{
+		display: none;
+	}
+}
